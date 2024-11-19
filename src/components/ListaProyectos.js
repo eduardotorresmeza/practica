@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Table, Button, Modal, Form } from 'react-bootstrap';
-import RegistroUsuario from './RegistroUsuario'; // Importamos el componente RegistroUsuario
+import RegistroUsuario from './RegistroUsuario'; 
 
 function ListaProyectos() {
   const [proyectos, setProyectos] = useState([
@@ -19,7 +19,7 @@ function ListaProyectos() {
   ]);
 
   const [show, setShow] = useState(false);
-  const [modo, setModo] = useState(''); // Puede ser 'crear', 'editar' o 'ver'
+  const [modo, setModo] = useState(''); 
   const [proyectoActual, setProyectoActual] = useState({
     id: null,
     nombre: '',
@@ -65,8 +65,8 @@ function ListaProyectos() {
     const nuevoProyecto = {
       id: proyectos.length + 1,
       nombre: `${usuario.nombres} ${usuario.apellidos}`,
-      tecnologia: usuario.edad, // Mostramos la edad como una columna dedicada
-      estado: `${usuario.pais} - ${usuario.distrito}`, // Mostramos país y distrito combinados
+      tecnologia: usuario.edad, 
+      estado: `${usuario.pais} - ${usuario.distrito}`,
     };
     setProyectos([...proyectos, nuevoProyecto]);
   };

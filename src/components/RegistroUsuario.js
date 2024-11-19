@@ -20,14 +20,8 @@ function RegistroUsuario({ onAgregarUsuario }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onAgregarUsuario(usuario); // Envía los datos al componente padre o a ListaProyectos
-    setUsuario({
-      nombres: '',
-      apellidos: '',
-      edad: '',
-      pais: '',
-      distrito: ''
-    });
+    onAgregarUsuario(usuario); 
+    setUsuario({ nombres: '', apellidos: '', edad: '', pais: '', distrito: '' }); 
   };
 
   return (

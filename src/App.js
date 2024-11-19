@@ -14,7 +14,7 @@ function App() {
     <div>
       <Navbar />
       <Container className="mt-4">
-        <h1>Plataforma de Realidad Aumentada</h1>
+        <h1>Plataforma de Realidad Aumentada-examen</h1>
         <AlertaRA />
         <ModalRA />
         <ToastRA />
